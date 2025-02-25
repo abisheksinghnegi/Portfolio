@@ -60,3 +60,52 @@
     background-color: rgb(87, 168, 255);
     color: white;
   }
+
+  /* responsive.css */
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 30px 20px; /* Reduced padding for smaller screens */
+  }
+
+  form {
+    padding: 30px; /* Reduced form padding */
+    max-width: 90%; /* Adjust form width */
+    margin: 20px auto; /* Add margin for spacing */
+  }
+
+  input,
+  textarea {
+    padding: 8px; /* Reduced input/textarea padding */
+    margin: 8px 0; /* Reduced input/textarea margin */
+  }
+
+  textarea {
+    height: 80px; /* Reduced textarea height */
+  }
+
+  .btn {
+    height: 35px; /* Reduced button height */
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 375px) {
+  .contact {
+    padding: 20px 15px; /* Further reduced padding */
+  }
+
+  form {
+    padding: 20px; /* Further reduced form padding */
+  }
+
+  input,
+  textarea {
+    padding: 6px; /* Further reduced input/textarea padding */
+  }
+
+  .btn {
+    height: 30px; /* Further reduced button height */
+    font-size: 0.9em; /* Adjust font size */
+  }
+}

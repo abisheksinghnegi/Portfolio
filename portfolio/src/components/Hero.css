@@ -63,7 +63,7 @@
 }
 
 .wrapper {
- 
+
   display: flex;
   justify-content: space-around;
   grid-template-columns: repeat( auto-fit, 1fr );
@@ -423,4 +423,97 @@
   100% {
       background-position: 100% 50%;
   }
+}
+
+
+/* responsive.css */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* Stack menu and card */
+    align-items: center; /* Center items */
+
+
+    grid-template-areas:
+      "menu"
+      "card";
+  }
+
+  .menu {
+    align-self: center;
+    margin-bottom: 20px; /* Add space between menu and card */
+  }
+
+  .menu__list {
+    display: flex;
+    flex-wrap: wrap; /* Allow menu items to wrap */
+    justify-content: center; /* Center menu items */
+  }
+
+  .menu__item {
+    padding: 10px 15px; /* Adjust padding */
+    font-size: var(--fontMedium);
+  }
+
+  .card {
+    width: 90vw; /* Make card take up 90% of viewport width */
+    max-width: 250px; /* Limit max width */
+    height: 310px; /* Allow height to adjust */
+  }
+
+  .card__header {
+    height: 150px; /* Adjust header height */
+  }
+
+  .card__profile {
+    width: 80px; /* Smaller profile image */
+    height: 80px;
+  }
+
+  .card__name {
+    font-size: 1.1rem; /* Adjust font size */
+  }
+
+  .card__job {
+    font-size: var(--fontSmall);
+  }
+
+  .card__bio {
+    font-size: var(--fontSmall);
+    margin: 15px 0 10px 0;
+  }
+
+  .card__footer {
+    grid-template-columns: 1fr; /* Stack date and category */
+    grid-template-areas:
+      "date"
+      "category";
+    text-align: center; /* Center footer text */
+  }
+
+  .card__date,
+  .card__category {
+    justify-self: center; /* Center footer items */
+    margin-bottom: 5px; /* Add space between date and category */
+  }
+
+  .masked-text {
+    font-size: 3rem; /* Smaller font on mobile */
+    margin-top: 50px;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 375px) {
+    .menu__item {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    .card__name {
+        font-size: 1rem;
+    }
+    .masked-text {
+        font-size: 3rem;
+    }
 }

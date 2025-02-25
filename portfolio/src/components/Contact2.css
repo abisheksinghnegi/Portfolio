@@ -148,3 +148,78 @@
   .soc-list .soc-item:hover:nth-child(4) .soc-link:after {
     background: #e46880;
   }
+
+
+  /* responsive.css */
+
+@media (max-width: 768px) {
+  #con2 {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px; /* Add padding */
+  }
+
+  .soc-list {
+    margin-left: 170px;
+    margin-top: 50px;
+    flex-direction: column; /* Stack social items vertically */
+    align-items: center; /* Center items */
+    left: 50%;
+    transform: translateX(-50%); /* Center the list */
+  }
+
+  .soc-list .soc-item {
+    margin: 20px 0; /* Adjust margin */
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .soc-list .soc-item .soc-link {
+    width: 180px; /* Adjust link width */
+    height: 60px; /* Adjust link height */
+    padding-left: 15px; /* Adjust padding */
+  }
+
+  .soc-list .soc-item .soc-icon {
+    font-size: 30px; /* Adjust icon size */
+    line-height: 60px; /* Adjust line height */
+    padding-right: 10px; /* Adjust padding */
+  }
+
+  .soc-list .soc-item .soc-text {
+    font-size: 0.8em; /* Adjust text size */
+    top: 20px; /* Adjust text position */
+  }
+
+  .soc-list .soc-item .soc-link:before {
+    left: -15px; /* Adjust before position */
+    width: 15px; /* Adjust before width */
+  }
+
+  .soc-list .soc-item .soc-link:after {
+    bottom: -15px; /* Adjust after position */
+  }
+
+  .soc-list .soc-item .soc-link:hover {
+    transform: rotate(-30deg) skew(25deg) translate(10px, -8px); /* Adjust hover transform */
+    box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.5); /* Adjust hover shadow */
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 375px) {
+  .soc-list .soc-item .soc-link {
+    width: 150px;
+    height: 50px;
+    padding-left: 10px;
+  }
+
+  .soc-list .soc-item .soc-icon {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .soc-list .soc-item .soc-text {
+    font-size: 0.7em;
+    top: 15px;
+  }
+}

@@ -161,3 +161,68 @@
 .pho:hover .pho__info-hover {
   opacity: 1;
 }
+
+/* responsive.css */
+
+@media (max-width: 768px) {
+  #project {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 60px 20px; /* Reduced padding */
+  }
+
+  .phos {
+    flex-direction: column; /* Stack photos vertically */
+    gap: 30px; /* Reduced gap */
+  }
+
+  .pho {
+    width: 100%; /* Photos take full width */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .pho__img,
+  .pho__img--hover {
+    height: 200px; /* Adjust image height */
+  }
+
+  .pho__info {
+    padding: 12px 18px 18px 18px; /* Reduced padding */
+  }
+
+  .pho__category {
+    font-size: 11px; /* Adjust font size */
+    letter-spacing: 1px;
+  }
+
+  .pho__title {
+    font-size: 1.2em; /* Adjust font size */
+    margin-top: 3px;
+    margin-bottom: 8px;
+  }
+
+  .pho__by {
+    font-size: 10px; /* Adjust font size */
+  }
+
+  .pho__clock-info {
+    float: none; /* Remove float */
+    text-align: center; /* Center clock info */
+    margin-top: 10px; /* Add margin */
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 375px) {
+  #project {
+    padding: 40px 15px; /* Further reduced padding */
+  }
+
+  .pho__img,
+  .pho__img--hover {
+    height: 150px; /* Further reduced image height */
+  }
+
+  .pho__title {
+    font-size: 1em; /* Further reduced font size */
+  }
+}

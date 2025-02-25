@@ -30,3 +30,46 @@
   justify-content: flex-end;
   align-items:end;
 }
+
+/* responsive.css */
+
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 20px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow height to adjust */
+  }
+
+  #aboutme {
+    flex-direction: column; /* Stack image and paragraph */
+    gap: 30px; /* Reduce gap */
+    align-items: center; /* Center items */
+  }
+
+  #h2 {
+    margin-bottom: 30px; /* Reduce margin */
+  }
+
+  #me {
+    height: 150px; /* Adjust image size */
+    width: 150px;
+  }
+
+  #para {
+    padding: 15px;
+    font-size: x-small;
+    justify-content: center; /* Center paragraph */
+    align-items: center;
+    text-align: center; /* Center text inside paragraph */
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 375px) {
+    .about {
+        padding: 60px 15px;
+    }
+    #me {
+        height: 200px;
+        width: 200px;
+    }
+}
