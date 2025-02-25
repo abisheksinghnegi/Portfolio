@@ -1,0 +1,62 @@
+.contact {
+    text-align: center;
+    padding: 50px;
+    animation:  cape 1s ease;
+    animation-timeline: view();
+  }
+  @keyframes cape {
+    0% {
+      transform: scaleY(0.3);  
+      opacity: 0;
+  }
+  45% {
+    transform: scaleY(1);   
+      opacity: 1;
+  }
+    
+  }
+  
+  form {
+    background-color: rgba(0, 0, 0, 0.168);
+    display: flex;
+    backdrop-filter: blur(18px);
+    flex-direction: column;
+    border-radius: 30px;
+    max-width: 600px;
+    padding: 50px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    background-color: rgba(0, 0, 0, 0.379);
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+
+  input:hover{
+    background-color: black;
+    color: wheat;
+  }
+
+  textarea:hover{
+    background-color: black;
+    color: wheat;
+  }
+  .btn:hover{
+    background-color: rgba(255, 76, 76, 0.821);
+  }
+
+  .btn{
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    background-color: rgb(87, 168, 255);
+    color: white;
+  }

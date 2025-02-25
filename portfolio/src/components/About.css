@@ -1,0 +1,32 @@
+.about {
+    text-align: center;
+    padding: 140px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation:  cap 1s ease;
+    animation-timeline: view();
+  }
+  
+#aboutme{
+  display: flex;
+  gap: 70px;
+}
+
+#h2{
+  margin-bottom: 50px;
+}
+
+#me{
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+#para{
+  color: rgba(255, 255, 255, 0.822);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items:end;
+}
