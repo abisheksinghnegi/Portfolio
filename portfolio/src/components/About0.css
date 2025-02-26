@@ -1,0 +1,133 @@
+#name{
+    display: grid;
+    gap: 30PX;
+        animation:  cap 1s ease;
+        animation-timeline: view();
+}
+#det{
+    display: flex;
+    gap: 50px;
+
+}
+
+#ah{
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.asssk{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.tell{
+    text-align: right;
+    color: rgb(255, 255, 255);
+    margin-left: 230px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#ab{padding: 150px;
+    display: flex;
+    height: 100vh;
+    justify-content: start;
+    align-items: start;
+    gap: 150px;
+}
+
+#me{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 150px;
+    border-radius: 20px;
+  }
+  
+
+  /* responsive.css */
+
+/* General adjustments for smaller screens */
+@media (max-width: 1200px) {
+    #ab {
+      padding: 100px; /* Reduced padding on slightly smaller screens */
+      gap: 100px; /* Reduced gap */
+    }
+  
+    #me {
+      height: 280px;
+      width: 280px;
+      margin-bottom: 100px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    #ab {
+      padding: 80px; /* Further reduced padding */
+      gap: 80px; /* Further reduced gap */
+      
+    }
+  
+    #me {
+      height: 260px;
+      width: 260px;
+      margin-left: 100px;
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #det {
+        margin-left: 20px;
+      flex-direction: row; /* Stack elements vertically */
+      gap: 20px; /* Reduced gap */
+    }
+  
+    .tell {
+        font-size: x-small;
+      margin-left: 0; /* Remove left margin */
+      text-align: right; /* Align text left */
+    }
+    .asssk{
+        font-size: x-small;
+    }
+    #ab {
+      padding: 50px; /* Further reduced padding */
+      flex-direction: column; /* Stack elements vertically */
+      height: auto; /* Adjust height based on content */
+      gap: 50px; /* Further reduced gap */
+    }
+  
+    #me {
+      height: 250px; /* Further reduced image size */
+      width: 250px; /* Further reduced image size */
+      margin-bottom: 20px; /* Reduced margin */
+    }
+  
+    #ah {
+      margin-top: 50px; /* Adjusted margin */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #ab {
+      padding: 20px; /* Further reduced padding */
+      gap: 30px; /* Further reduced gap */
+    }
+  
+    #me {
+      height: 200px; /* Further reduced image size */
+      width: 200px; /* Further reduced image size */
+    }
+  
+    #name {
+      gap: 20px; /* Reduced gap */
+    }
+  }
+  
+  /* Adjustments for very small screens */
+  @media (max-width: 480px) {
+    /* You can add further specific adjustments here if needed */
+    #me{
+      height: 150px;
+      width: 150px;
+    }
+  }

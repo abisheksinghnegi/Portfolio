@@ -2,6 +2,7 @@
     height: 80vh;
     animation:  cap 1s ease;
     animation-timeline: view();
+    overflow: hidden;
 }
 
 @keyframes cap {

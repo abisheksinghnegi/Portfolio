@@ -3,6 +3,7 @@
     padding: 50px;
     animation:  cape 1s ease;
     animation-timeline: view();
+    overflow: hidden;
   }
   @keyframes cape {
     0% {
